@@ -73,6 +73,10 @@
     <IncludePath>C:\Users\11190\source\repos\SnakeGame_OpenGL\SnakeGame_OpenGL\glfw-3.2.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\11190\source\repos\SnakeGame_OpenGL\SnakeGame_OpenGL\glfw-3.2.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\11190\Desktop\SnakeGame_OpenGL\project\SnakeGame_OpenGL\glfw-3.2.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\11190\Desktop\SnakeGame_OpenGL\project\SnakeGame_OpenGL\glfw-3.2.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

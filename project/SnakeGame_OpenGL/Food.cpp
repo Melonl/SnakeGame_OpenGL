@@ -72,7 +72,7 @@ void Food::draw()
 
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-	delete[] vertices;
+	free(vertices);
 
 	glBindVertexArray(0);
 	shader.unUse();

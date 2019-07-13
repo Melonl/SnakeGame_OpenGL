@@ -56,8 +56,8 @@ void Snake::draw()
 	
 	glDrawElements(GL_TRIANGLES, 6*size, GL_UNSIGNED_INT, 0);
 
-	delete[] vertices;
-	delete[] indices;
+	free(vertices);
+	free(indices);
 
 	glBindVertexArray(0);
 	shader.unUse();
