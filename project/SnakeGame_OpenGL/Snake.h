@@ -1,36 +1,15 @@
 #pragma once
 #include <vector>
 #include <iostream>
-#include "Shader.h"
 #include <thread>
 #include <atomic>  
+
+#include "Shader.h"
+#include "Cube.h"
 
 using namespace std;
 
 enum Direct { Left, Up, Right, Down };
-
-class Cube {
-public:
-	float x;
-	float y;
-	bool head;
-
-
-	Cube(float xx,float yy,bool isHead):x(xx),y(yy),head(isHead) {}
-	Cube(){}
-	void operator=(const Cube& cube){
-		x = cube.x;
-		y = cube.y;
-	}
-	
-	bool is(float xx, float yy) {
-		bool res = false;
-		if (x == xx && y == yy) {
-			res = true;
-		}
-		return res;
-	}
-};
 
 class Snake{
 

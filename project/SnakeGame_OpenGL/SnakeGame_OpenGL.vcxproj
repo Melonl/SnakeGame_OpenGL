@@ -125,6 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cube.cpp" />
     <ClCompile Include="Food.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -133,6 +134,7 @@
     <ClCompile Include="Snake.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cube.h" />
     <ClInclude Include="Food.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="ResourceManager.h" />

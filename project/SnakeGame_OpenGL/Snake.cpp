@@ -35,10 +35,13 @@ void Snake::draw()
 		}
 	}
 	glBufferData(GL_ARRAY_BUFFER,bufferSize , vertices, GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	/*
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
+	*/
 
 	int indexBufferSize = sizeof(unsigned int)*size * 6;
 	unsigned int* indices = (unsigned int*)malloc(indexBufferSize);
@@ -58,8 +61,8 @@ void Snake::draw()
 
 	free(vertices);
 	free(indices);
-
 	glBindVertexArray(0);
+
 	shader.unUse();
 
 	
